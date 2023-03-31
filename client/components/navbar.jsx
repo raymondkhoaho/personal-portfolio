@@ -18,6 +18,7 @@ export default class NavBar extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
+              <Nav.Link href="#resume">Resume</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#projects">Projects</Nav.Link>
               <Nav.Link href="#technologies">Technologies</Nav.Link>
