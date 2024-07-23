@@ -6,16 +6,14 @@ import Projects from './components/projects';
 import Technologies from './components/technologies';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <main>
-        <NavBar />
-        <About />
-        <Projects />
-        <Technologies />
-        <Contact />
-      </main>
-    );
-  }
+export default function App() {
+  return (
+    <main>
+      <NavBar />
+      <About />
+      <Projects />
+      <Technologies />
+      <Contact />
+    </main>
+  );
 }
