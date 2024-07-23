@@ -1,14 +1,9 @@
 import React from 'react';
 
-export default class Technologies extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = null;
-  }
+export default function Technologies() {
 
-  render() {
-    return (
-      <div>Technologies</div>
-    );
-  }
+  return (
+    <div>Technologies</div>
+  );
+
 }
