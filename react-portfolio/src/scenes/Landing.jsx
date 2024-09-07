@@ -15,18 +15,18 @@ const Landing = ({ setSelectedPage }) => {
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-ss-full before:rounded-ee-full
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-sky-600 before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-ss-full rounded-ee-full"
+              className="hover:saturate-200 filter saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-ss-full rounded-ee-full"
               src="assets/profile-picture.jpg"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px] rounded-ss-full rounded-ee-full"
+            className="saturate-150 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-ss-full rounded-ee-full"
             src="assets/profile-picture.jpg"
           />
         )}
@@ -73,7 +73,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-gradient-to-r from-cyan-500 to-cyan-700 text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
