@@ -739,6 +739,116 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
+.rounded-s-2xl{
+  border-start-start-radius: 1rem;
+  border-end-start-radius: 1rem;
+}
+
+.rounded-e-2xl{
+  border-start-end-radius: 1rem;
+  border-end-end-radius: 1rem;
+}
+
+.rounded-t-2xl{
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rounded-t-full{
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.rounded-r-full{
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-t{
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-ss-full{
+  border-start-start-radius: 9999px;
+}
+
+.rounded-ss-lg{
+  border-start-start-radius: 0.5rem;
+}
+
+.rounded-se-full{
+  border-start-end-radius: 9999px;
+}
+
+.rounded-ee-full{
+  border-end-end-radius: 9999px;
+}
+
+.rounded-es-full{
+  border-end-start-radius: 9999px;
+}
+
+.rounded-tl-full{
+  border-top-left-radius: 9999px;
+}
+
+.rounded-ee-3xl{
+  border-end-end-radius: 1.5rem;
+}
+
+.rounded-ss-3xl{
+  border-start-start-radius: 1.5rem;
+}
+
+.rounded-ee-\[200\]{
+  border-end-end-radius: 200;
+}
+
+.rounded-ee-\[200px\]{
+  border-end-end-radius: 200px;
+}
+
+.rounded-ee-\[1000px\]{
+  border-end-end-radius: 1000px;
+}
+
+.rounded-ee-\[5000px\]{
+  border-end-end-radius: 5000px;
+}
+
+.rounded-ss-\[5000px\]{
+  border-start-start-radius: 5000px;
+}
+
+.rounded-ee-\[4000px\]{
+  border-end-end-radius: 4000px;
+}
+
+.rounded-ss-\[4000px\]{
+  border-start-start-radius: 4000px;
+}
+
+.rounded-ee-\[2000px\]{
+  border-end-end-radius: 2000px;
+}
+
+.rounded-ss-\[2000px\]{
+  border-start-start-radius: 2000px;
+}
+
+.rounded-ee-\[500px\]{
+  border-end-end-radius: 500px;
+}
+
+.rounded-ss-\[500px\]{
+  border-start-start-radius: 500px;
+}
+
 .bg-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
@@ -944,6 +1054,16 @@ body,
   border-top-right-radius: 400px;
 }
 
+.before\:rounded-ee-full::before{
+  content: var(--tw-content);
+  border-end-end-radius: 9999px;
+}
+
+.before\:rounded-ss-full::before{
+  content: var(--tw-content);
+  border-start-start-radius: 9999px;
+}
+
 .before\:border-2::before{
   content: var(--tw-content);
   border-width: 2px;
@@ -959,6 +1079,14 @@ body,
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(253 204 73 / var(--tw-border-opacity));
+}
+
+.hover\:rounded-ee-full:hover{
+  border-end-end-radius: 9999px;
+}
+
+.hover\:rounded-ss-full:hover{
+  border-start-start-radius: 9999px;
 }
 
 .hover\:bg-blue:hover{
