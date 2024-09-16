@@ -713,6 +713,30 @@ video {
   display: none;
 }
 
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-auto{
+  aspect-ratio: auto;
+}
+
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-\[4\/3\]{
+  aspect-ratio: 4/3;
+}
+
+.aspect-\[5\/3\]{
+  aspect-ratio: 5/3;
+}
+
+.aspect-\[4\.5\/3\]{
+  aspect-ratio: 4.5/3;
+}
+
 .size-48{
   width: 12rem;
   height: 12rem;
@@ -721,6 +745,16 @@ video {
 .size-9{
   width: 2.25rem;
   height: 2.25rem;
+}
+
+.size-full{
+  width: 100%;
+  height: 100%;
+}
+
+.size-auto{
+  width: auto;
+  height: auto;
 }
 
 .h-3{
@@ -737,6 +771,14 @@ video {
 
 .h-32{
   height: 8rem;
+}
+
+.h-\[400px\]{
+  height: 400px;
+}
+
+.h-auto{
+  height: auto;
 }
 
 .max-h-\[400px\]{
@@ -769,6 +811,10 @@ video {
 
 .w-2\/3{
   width: 66.666667%;
+}
+
+.w-\[400px\]{
+  width: 400px;
 }
 
 .max-w-\[400px\]{
@@ -899,6 +945,10 @@ video {
   --tw-gradient-to: #0e7490 var(--tw-gradient-to-position);
 }
 
+.bg-cover{
+  background-size: cover;
+}
+
 .p-12{
   padding: 3rem;
 }
@@ -1014,6 +1064,11 @@ video {
 .text-red{
   --tw-text-opacity: 1;
   color: rgb(220 68 146 / var(--tw-text-opacity));
+}
+
+.text-blue{
+  --tw-text-opacity: 1;
+  color: rgb(44 188 233 / var(--tw-text-opacity));
 }
 
 .opacity-0{
@@ -1146,6 +1201,11 @@ body,
   border-width: 2px;
 }
 
+.before\:border-4::before{
+  content: var(--tw-content);
+  border-width: 4px;
+}
+
 .before\:border-sky-600::before{
   content: var(--tw-content);
   --tw-border-opacity: 1;
@@ -1162,6 +1222,12 @@ body,
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(44 188 233 / var(--tw-border-opacity));
+}
+
+.before\:border-red::before{
+  content: var(--tw-content);
+  --tw-border-opacity: 1;
+  border-color: rgb(220 68 146 / var(--tw-border-opacity));
 }
 
 .hover\:bg-blue:hover{
@@ -1219,6 +1285,14 @@ body,
 
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
