@@ -18,7 +18,6 @@ const projectVariant = {
 const Project = ({ title, description, link }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -30,7 +29,7 @@ const Project = ({ title, description, link }) => {
           </p>
         </div>
       </a>
-      <img className="aspect-[4.5/3]" src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img className="aspect-[4.5/3]" src={`../assets/${title.toLowerCase()}.jpeg`} alt={title} />
     </motion.div>
   );
 };
@@ -55,14 +54,9 @@ const Projects = () => {
             <span className="text-blue">PRO</span>JECTS
           </p>
           <div className="flex justify-center mt-5">
-            <LineGradient width="w-2/3" />
+            <LineGradient width="w-2/3 mb-10" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
-        </p>
       </motion.div>
 
       {/* PROJECTS */}
@@ -75,12 +69,6 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          {/* <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div> */}
           <Project title="InstaPet" link="https://instapet.raymondkhoaho.com" description="A full stack web application for animal lovers who want to show off their pet to the community." />
           <Project title="MacVue" link="https://raymondkhoaho.github.io/MacVue/" description="A web application for the health conscious who want to view nutritional facts about a food." />
           <Project title="Evogym" link="https://e737e1ad.gym-typescript-5uj.pages.dev/" description="Typescript React Fitness Application"/>
