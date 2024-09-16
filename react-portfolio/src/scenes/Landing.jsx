@@ -15,11 +15,11 @@ const Landing = ({ setSelectedPage }) => {
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-ss-full before:rounded-ee-full
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-sky-600 before:z-[-1]"
+            before:w-full before:max-w-[400px] md:before:max-w-[500px] before:h-full before:border-2 before:border-sky-600 before:z-[-1]"
           >
             <img
               alt="profile"
-              className="hover:saturate-200 filter saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] rounded-ss-full rounded-ee-full"
+              className="hover:saturate-200 filter saturate-150 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] rounded-ss-full rounded-ee-full"
               src="assets/profile-picture.jpg"
             />
           </div>
