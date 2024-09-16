@@ -3,6 +3,8 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
+import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 import { useEffect, useState } from "react";
 import LineGradient from "./components/LineGradient";
 import useMediaQuery from "./hooks/useMediaQuery";
@@ -29,7 +31,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-auto">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -39,13 +41,19 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-auto">
         <MySkills />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
       </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-auto">
+        <Contact />
+      </div>
+      <LineGradient />
+      <Footer />
     </div>
 
   );
