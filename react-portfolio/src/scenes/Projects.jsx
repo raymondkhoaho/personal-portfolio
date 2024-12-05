@@ -19,6 +19,8 @@ const Project = ({ title, description, link }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
 
+  const projectTitle = title.split(" ").join("-").toLowerCase();
+
   return (
     <motion.div variants={projectVariant} className="relative">
       <a href={link} target="_blank" rel="noreferrer">
@@ -29,7 +31,7 @@ const Project = ({ title, description, link }) => {
           </p>
         </div>
       </a>
-      <img className="aspect-[4.5/3]" src={`../assets/${title.toLowerCase()}.jpeg`} alt={title} />
+      <img className="aspect-[4.5/3]" src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
   );
 };
@@ -71,7 +73,8 @@ const Projects = () => {
           {/* ROW 1 */}
           <Project title="InstaPet" link="https://instapet.raymondkhoaho.com" description="A full stack web application for animal lovers who want to show off their pet to the community." />
           <Project title="MacVue" link="https://raymondkhoaho.github.io/MacVue/" description="A web application for the health conscious who want to view nutritional facts about a food." />
-          <Project title="Evogym" link="https://e737e1ad.gym-typescript-5uj.pages.dev/" description="Typescript React Fitness Application"/>
+          <Project title="Evogym" link="https://e737e1ad.gym-typescript-5uj.pages.dev/" description="Typescript React Fitness Application" />
+          <Project title="Project Management" link="https://main.d2963ufoo1gdlb.amplifyapp.com/" description="NextJS Project Management Application using AWS to Deploy" />
 
         </motion.div>
       </div>
