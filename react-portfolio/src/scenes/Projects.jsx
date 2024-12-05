@@ -74,7 +74,7 @@ const Projects = () => {
           <Project title="InstaPet" link="https://instapet.raymondkhoaho.com" description="A full stack web application for animal lovers who want to show off their pet to the community." />
           <Project title="MacVue" link="https://raymondkhoaho.github.io/MacVue/" description="A web application for the health conscious who want to view nutritional facts about a food." />
           <Project title="Evogym" link="https://e737e1ad.gym-typescript-5uj.pages.dev/" description="Typescript React Fitness Application" />
-          <Project title="Project Management" link="https://main.d2963ufoo1gdlb.amplifyapp.com/" description="NextJS Project Management Application using AWS to Deploy" />
+          <Project title="Project Management" link="https://projectmgmt.raymondkhoaho.com/" description="NextJS Project Management Application using AWS to Deploy" />
 
         </motion.div>
       </div>
